@@ -210,7 +210,7 @@ section {
 
 @media (max-width: 768px) {
     .home  {
-        height: 70vh;
+        min-height: 70vh;
     }
 }
 
