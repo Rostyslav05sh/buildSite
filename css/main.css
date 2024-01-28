@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-color: gray;
+    background-color: #7c7b7b;
 }
 
 header {
@@ -134,7 +134,7 @@ section {
 .home {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+    height: 100vh;
     gap: 2vw;
     align-items: center;
     background-color: #5576ff;
@@ -192,7 +192,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 0%;
+    width: 0;
     height: 100%;
     background: var(--orange-clr);
     z-index: -1;
@@ -209,17 +209,11 @@ section {
 }
 
 @media (max-width: 768px) {
-    .home .content {
-        min-height: 1000vh;
+    .home  {
+        height: 70vh;
     }
 }
 
-@media (max-width: 425px) {
-    .home .content {
-        min-height: 10vh;
-        width: 30vw;
-    }
-}
 
 .projects {
     min-height: 100vh;
@@ -332,13 +326,13 @@ font-size: calc(14px + (20 - 14) *
 .contacts .box-container .box p {
     font-size: calc(14px + (16 - 14) *
     ((100vw - 300px) / (1600 - 300)));
-    color: gray;
+    color: #7c7b7b;
 }
 
 .contacts .box-container .box address {
     font-size: calc(14px + (16 - 14) *
     ((100vw - 300px) / (1600 - 300)));
-    color: gray;
+    color: #818181;
 }
 
 .contacts .box-container .box:nth-child(2) p:nth-child(even) {
