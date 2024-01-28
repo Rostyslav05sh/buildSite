@@ -134,7 +134,7 @@ section {
 .home {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
     gap: 2vw;
     align-items: center;
     background-color: #5576ff;
