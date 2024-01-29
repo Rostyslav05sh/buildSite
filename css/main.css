@@ -442,9 +442,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (max-width: 768px) {
 
+    .email {
+        min-height: 70vh;
+    }
+
     .form {
         min-width: 75vw;
-        max-height: 50vh;
+        min-height: 40vh;
     }
 
 }
