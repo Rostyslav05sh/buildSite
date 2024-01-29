@@ -413,12 +413,6 @@ font-size: calc(14px + (20 - 14) *
     display: flex;
 }
 
-.form button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .form input, .form textarea {
     width: 100%;
     margin: 1rem 0;
