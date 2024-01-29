@@ -403,7 +403,7 @@ font-size: calc(14px + (20 - 14) *
     padding-bottom: 10vh;
 }
 
-.form {
+.email .form {
     max-width: 65vw;
     min-width: 60vw;
     padding: 2rem 2.5rem;
