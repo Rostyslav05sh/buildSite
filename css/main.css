@@ -443,6 +443,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .form {
         min-width: 75vw;
+        max-height: 50vh;
     }
 
 }
@@ -451,6 +452,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .form {
         min-width: 75vw;
+        max-height: 50vh;
     }
 
 }
