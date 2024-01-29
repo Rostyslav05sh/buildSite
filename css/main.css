@@ -405,11 +405,9 @@ font-size: calc(14px + (20 - 14) *
 
 .email .form {
     max-width: 65vw;
-    min-width: 60vw;
     padding: 2rem 2.5rem;
     background-color: #222222;
     border-radius: .8rem;
-    min-height: 70vh;
     display: flex;
     flex-direction: column;
 }
