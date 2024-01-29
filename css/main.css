@@ -405,14 +405,16 @@ font-size: calc(14px + (20 - 14) *
 
 .form {
     min-width: 50vw;
-    min-height: 50vh;
-    max-height: 70vh;
+    min-height: 70vh;
     padding: 2rem 2.5rem;
     background-color: #222222;
     border-radius: .8rem;
+}
+
+.form button {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .form input, .form textarea {
