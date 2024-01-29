@@ -405,7 +405,7 @@ font-size: calc(14px + (20 - 14) *
 
 .form {
     min-width: 50vw;
-    min-height: 55vh;
+    min-height: 45vh;
     padding: 2rem 2.5rem;
     background-color: #222222;
     border-radius: .8rem;
