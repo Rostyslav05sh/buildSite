@@ -24,7 +24,8 @@
     <ul class="navbar">
         <li><a href="#home">Компанія</a></li>
         <li><a href="#projects">Обʼєкти</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+        <li><a href="#email">Звʼязок</a></li>
     </ul>
 </header>
 
@@ -99,7 +100,7 @@
 </section>
 
 
-<section class="contacts">
+<section id="contacts" class="contacts">
 
     <div class="box-container">
 
@@ -120,11 +121,40 @@
 
         <div class="box">
             <h3>Call Us</h3>
-            <p>+38 044 1234567</p>
-            <p>+38 044 1234567</p>
+            <p>+38-044-123-4567</p>
+            <p>+38-044-123-4567</p>
         </div>
 
     </div>
+
+</section>
+
+<section id="emailform" class="email">
+
+    <form id="form" action="https://api.web3forms.com/submit" method="POST" class="form">
+
+        <h2>Get in Touch</h2>
+
+        <input type="hidden" name="access_key" value="67290b97-6889-4178-9dc7-26fa5b80f096">
+        <input type="text" name="name" required placeholder="Enter your name">
+        <input type="number" name="phone" required placeholder="Enter your number (+38-044-123-4567)">
+        <input type="email" name="email" required placeholder="Enter your email">
+        <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <button type="submit" class="btn">Надіслати</button>
+    </form>
+
+</section>
+
+<section class="footer">
+
+    <div class="menu">
+        <a href="#home" class="btn">Компанія</a>
+        <a href="#projects" class="btn">Обʼєкти</a>
+        <a href="#contacts" class="btn">Контакти</a>
+        <a href="#email" class="btn">Звʼязок</a>
+    </div>
+
+    <h3 class="copyright"> All rights reserved</h3>
 
 </section>
 
