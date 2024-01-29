@@ -410,6 +410,7 @@ font-size: calc(14px + (20 - 14) *
     background-color: #222222;
     border-radius: .8rem;
     flex-direction: column;
+    display: flex;
 }
 
 .form button {
