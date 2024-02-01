@@ -485,7 +485,7 @@ section {
     }
 
     .catalog .box-container .box:hover .icon {
-        transform: translateY(200%);
+        transform: translateY(400%);
     }
 
     .box-container .box .icon {
