@@ -215,10 +215,18 @@ section {
     color: white;
 }
 
+@media (max-width: 1024px) {
+
+    .home  {
+        min-height: 50vh;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     .home  {
-        min-height: 60vh;
+        min-height: 55vh;
     }
 
 }
