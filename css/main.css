@@ -75,6 +75,13 @@ header ul.navbar li a {
     ((100vw - 300px) / (1600 - 300)));
 }
 
+header ul.navbar li a span {
+    color: #222222;
+    font-weight: 800;
+    font-size: calc(14px + (20 - 14) *
+    ((100vw - 300px) / (1600 - 300)));
+}
+
 header ul.navbar li a:hover {
     color: var(--orange-clr);
 }
@@ -238,62 +245,191 @@ section {
     }
 }
 
+.mainDirections {
+    min-height: 100vh;
+    background-color: #222222;
+    padding-bottom: 10vh;
+}
 
-.projects {
+.mainDirections .content {
+    flex: 1 1 80vw;
+    background-color: white;
+    border-radius: .5vw;
+    display: flex;
+}
+
+.mainDirections .content .heading {
+    font-size: calc(20px + (40 - 20) *
+    ((100vw - 300px) / (1600 - 300)));
+    margin: 2vh 0 2vh 2vw;
+    padding-right: 2vw;
+    border-right: 1px solid #7c7b7b;
+}
+
+.mainDirections .heading span {
+    background: var(--orange-clr);
+    color: white;
+    padding: .2vw;
+    border-radius: .5vw;
+}
+
+.mainDirections .content .box-container .box1 .headingLink1 h3,
+.mainDirections .content .box-container .box2 .headingLink2 h3,
+.mainDirections .content .box-container .box3 .headingLink3 h3,
+.mainDirections .content .box-container .box4 .headingLink4 h3,
+.mainDirections .content .box-container .box5 .headingLink5 h3,
+.mainDirections .content .box-container .box6 .headingLink6 h3  {
+    width: 35vw;
+}
+
+.mainDirections .content .box-container {
+    flex: 1 1 50vw;
+}
+
+.mainDirections .content .box-container .box1 a,
+.mainDirections .content .box-container .box2 a,
+.mainDirections .content .box-container .box3 a,
+.mainDirections .content .box-container .box4 a,
+.mainDirections .content .box-container .box5 a,
+.mainDirections .content .box-container .box6 a {
+    display: flex;
+    align-items: center;
+    padding: 5vh 1vw 5vh 1vw;
+    margin: 0 4vw 0 4vw;
+    font-size: calc(20px + (30 - 20) *
+    ((100vw - 300px) / (1600 - 300)));
+    color: #222222;
+}
+
+.mainDirections .content .box-container .box1 a,
+.mainDirections .content .box-container .box2 a,
+.mainDirections .content .box-container .box3 a,
+.mainDirections .content .box-container .box4 a,
+.mainDirections .content .box-container .box5 a {
+    border-bottom: 1px solid #7c7b7b;
+}
+
+.mainDirections .content .box-container .box1 i,
+.mainDirections .content .box-container .box2 i,
+.mainDirections .content .box-container .box3 i,
+.mainDirections .content .box-container .box4 i,
+.mainDirections .content .box-container .box5 i,
+.mainDirections .content .box-container .box6 i {
+    padding-left: 3vw;
+}
+
+.mainDirections .content .box-container .box1:hover .headingLink1 i,
+.mainDirections .content .box-container .box2:hover .headingLink2 i,
+.mainDirections .content .box-container .box3:hover .headingLink3 i,
+.mainDirections .content .box-container .box4:hover .headingLink4 i,
+.mainDirections .content .box-container .box5:hover .headingLink5 i,
+.mainDirections .content .box-container .box6:hover .headingLink6 i {
+    margin-left: 1vw;
+    transition: 0.7s;
+    color: var(--orange-clr);
+}
+
+@media (max-width: 768px) {
+
+    .mainDirections .content .heading {
+        font-size: calc(16px + (30 - 16) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .mainDirections .content .box-container .box1 .headingLink1 h3,
+    .mainDirections .content .box-container .box2 .headingLink2 h3,
+    .mainDirections .content .box-container .box3 .headingLink3 h3,
+    .mainDirections .content .box-container .box4 .headingLink4 h3,
+    .mainDirections .content .box-container .box5 .headingLink5 h3,
+    .mainDirections .content .box-container .box6 .headingLink6 h3 {
+        font-size: calc(12px + (25 - 12) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+}
+
+@media (max-width: 450px) {
+
+    .mainDirections {
+        min-height: 80vh;
+    }
+
+    .mainDirections .content .heading {
+        font-size: calc(12px + (20 - 12) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .mainDirections .content .box-container .box1 a,
+    .mainDirections .content .box-container .box2 a,
+    .mainDirections .content .box-container .box3 a,
+    .mainDirections .content .box-container .box4 a,
+    .mainDirections .content .box-container .box5 a,
+    .mainDirections .content .box-container .box6 a {
+        font-size: calc(12px + (20 - 12) *
+        ((100vw - 300px) / (1600 - 300)));
+        padding: 4vh 1vw 4vh 1vw;
+    }
+}
+
+.catalog {
     min-height: 100vh;
     background: white;
     padding-bottom: 10vh;
 }
 
-.projects .heading {
+.catalog .heading {
     text-align: center;
-    font-size: calc(14px + (40 - 14) *
+    font-size: calc(20px + (60 - 20) *
     ((100vw - 300px) / (1600 - 300)));
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
+    color: #222222;
 }
 
-
-.projects .heading span {
+.catalog .heading span {
     background: #222222;
     color: white;
     padding: .2vw;
     border-radius: .5vw;
-
 }
 
-.projects .box-container {
+.catalog .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
 }
 
-.projects .box-container .box {
-    flex: 1 1 30rem;
+.catalog .box-container .box {
+    flex: 1 1 60vw;
+    min-height: 60vh;
     position: relative;
     overflow: hidden;
     box-shadow: var(--box-shdow);
     border: 1px solid var(--orange-clr);
     border-radius: .5vw;
+    display: flex;
+    align-items: center;
 }
 
-.projects .box-container .box .image {
-    width: 100%;
+.catalog .box-container .box .image {
+    width: 50%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     top: -100%;
-    left: 0;
+    right: 0;
 }
 
 .box-container .box .content {
-    text-align: center;
+    text-align: left;
     padding: 2vw;
+    width: 50%;
 }
 
-.box-container .box .content i {
-    font-size: calc(20px + (85 - 20) *
+.box-container .box .icon {
+    font-size: calc(50px + (405 - 50) *
     ((100vw - 300px) / (1600 - 300)));
     color: var(--orange-clr);
+    text-align: center;
+    width: 50%;
 }
 
 .box-container .box .content h3 {
@@ -307,39 +443,68 @@ section {
     color: #3a3a3a;
 }
 
-.projects .box-container .box:hover .image {
+.catalog .box-container .box:hover .image {
     top: 0;
     cursor: pointer;
 }
 
-.projects .box-container .box:hover .content {
-    transform: translateY(100%);
+.catalog .box-container .box:hover .icon {
+    transform: translateY(150%);
+}
+
+@media (max-width: 1024px) {
+
+    .catalog .box-container .box {
+        min-height: 30vh;
+    }
+
 }
 
 @media (max-width: 768px) {
 
-    .projects {
+    .catalog {
         min-height: 70vh;
+    }
+
+    .catalog .box-container .box {
+        min-height: 30vh;
+    }
+
+    .catalog .box-container .box:hover .icon {
+        transform: translateY(200%);
     }
 
 }
 
 @media (max-width: 450px) {
-    .projects .box-container .box {
+    .catalog .box-container .box {
         padding: 10vh 0;
         margin-top: 5vh;
+        min-height: 20vh;
+        max-height: 30vh;
     }
 
-    .projects .box-container .box:hover .content {
-        transform: translateY(145%);
+    .catalog .box-container .box:hover .icon {
+        transform: translateY(200%);
     }
 
-    .box-container .box .content i {
-        font-size: calc(40px + (85 - 40) *
+    .box-container .box .icon {
+        font-size: calc(50px + (85 - 50) *
         ((100vw - 300px) / (1600 - 300)));
     }
 
-    .projects .heading {
+    .box-container .box .content h3 {
+        font-size: calc(16px + (25 - 16) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .box-container .box .content p {
+        font-size: calc(10px + (16 - 10) *
+        ((100vw - 300px) / (1600 - 300)));
+        color: #3a3a3a;
+    }
+
+    .catalog .heading {
         font-size: calc(20px + (40 - 20) *
         ((100vw - 300px) / (1600 - 300)));
     }
