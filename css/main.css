@@ -128,9 +128,21 @@ header ul.navbar li a:hover {
         background-color: white;
     }
 
+    header ul.navbar li a {
+        font-size: calc(16px + (60 - 16) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+
     header .navbar li:hover {
         border-left: 1vw solid var(--orange-clr);
         border-right: 1vw solid var(--orange-clr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .navbar {
+        width: 60vw;
     }
 }
 
@@ -272,10 +284,14 @@ section {
     margin: 2vh 0 2vh 2vw;
     padding-right: 2vw;
     border-right: 1px solid #7c7b7b;
+    display: flex;
+    align-items: center;
 }
 
 .mainDirections .heading span {
-    background: var(--orange-clr);
+    background-color: var(--orange-clr);
+    min-height: calc(2.5vh + (7 - 2.5) *
+    ((100vw - 300px) / (1600 - 300)));
     color: white;
     padding: .2vw;
     border-radius: .5vw;
@@ -341,6 +357,11 @@ section {
 
     .mainDirections .content .heading {
         font-size: calc(16px + (30 - 16) *
+        ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .mainDirections .heading span {
+        min-height: calc(2vh + (4 - 2) *
         ((100vw - 300px) / (1600 - 300)));
     }
 
